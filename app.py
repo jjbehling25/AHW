@@ -8,7 +8,7 @@ from openai import OpenAI
 # ──────────────────────────────────────────────────────────────
 if os.path.exists(".env"):
     load_dotenv()  # for local dev
-client = OpenAI(api_key=st.secrets("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # ──────────────────────────────────────────────────────────────
 # Helper to send messages
